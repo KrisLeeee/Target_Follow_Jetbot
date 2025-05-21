@@ -17,13 +17,13 @@ Overall System Logic Flow
 ### 1. Target Detection
 
 
-<img src="https://github.com/user-attachments/assets/eb0b0ea3-bee0-4c1d-83c7-18d7c85389d1" width="400">
+<img src="https://github.com/user-attachments/assets/eb0b0ea3-bee0-4c1d-83c7-18d7c85389d1" width="500">
 SSD Architecture
 
 We utilize transfer learning with SSD MobileNet model pretrained on the COCO Dataset for real-time object detection.
 
 
-<img src="https://github.com/user-attachments/assets/5fcf1875-946a-4059-96cd-2e4178309595" width="400">
+<img src="https://github.com/user-attachments/assets/5fcf1875-946a-4059-96cd-2e4178309595" width="500">
 Detection Output
 
 Only the output of oject detection algorithm is used for target following and object avoiding

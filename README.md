@@ -10,11 +10,14 @@ This work was published in the **IEEE International Conference on Consumer Elect
 ## System Overview
 
 <img src="https://github.com/user-attachments/assets/3820039b-e88f-40c0-ac3a-940f596c9360" width="400"/>
+
 Jetbot Platform
 
 
 <img src="https://github.com/user-attachments/assets/1bd5f635-1796-4f7e-b98c-72c8f3d8ceb8" width="400">
+
 Overall System Logic Flow
+
 
 ## System Workflow (3 core components)
 
@@ -27,7 +30,7 @@ SSD Architecture
 We utilize transfer learning with SSD MobileNet model pretrained on the COCO Dataset for real-time object detection.
 
 
-<img src="https://github.com/user-attachments/assets/5fcf1875-946a-4059-96cd-2e4178309595" width="500">
+<img src="https://github.com/user-attachments/assets/5fcf1875-946a-4059-96cd-2e4178309595" width="600">
 Detection Output
 
 Only the output of oject detection algorithm is used for target following and object avoiding
@@ -38,20 +41,23 @@ Usage
   - Confidence : oclusion
 
 
-a. Detects the target in the current frame (green bounding box)
+<img src="https://github.com/user-attachments/assets/64ee2d78-8668-480c-951b-ea39fc47bb19" width="700">
 
-b. If multiple targets are found, selects the one closest to the center of the frame
 
-c. In subsequent frames, selects the bounding box with the highest IoU with the previous target, to preserve on following the same target
+Detects the target in the current frame (green bounding box)
 
-d. If the target is lost (e.g., detection loading), retains the last known bouding box.
+If multiple targets are found, selects the one closest to the center of the frame
 
-e. JetBot performs a shakes its head(No sign) when the target is not detected.
+In subsequent frames, selects the bounding box with the highest IoU with the previous target, to preserve on following the same target
+
+If the target is lost (e.g., detection loading), retains the last known bouding box.
+
+JetBot performs a shakes its head(No sign) when the target is not detected.
 
 
 ### 2. Target Following
 
-a. Distane
+<img src="https://github.com/user-attachments/assets/4304517c-a40f-4c53-b6f0-6d32adc7e43a" width="700">
 
 Distance is estimated by the bounding box size.
 
@@ -61,7 +67,12 @@ If the bounding box becomes smaller than a threshold, the robot moves forward.
 
 If the target is not centered in the frame, the robot adjusts its heading to re-center it.
 
+
 ### 3. Obstacle Avoidance
+
+<img src="https://github.com/user-attachments/assets/75cdb2b5-69c6-4c32-a06e-7e202337b816" width="700">
+
+
 Any object with a different label than the target is considered an obstacle.
 
 Calculates IoU between target and obstacle to estimate overlap.

@@ -34,9 +34,13 @@ Usage
 
 
 a. Detects the target in the current frame (green bounding box)
+
 b. If multiple targets are found, selects the one closest to the center of the frame
+
 c. In subsequent frames, selects the bounding box with the highest IoU with the previous target, to preserve on following the same target
+
 d. If the target is lost (e.g., detection loading), retains the last known bouding box.
+
 e. JetBot performs a shakes its head(No sign) when the target is not detected.
 
 

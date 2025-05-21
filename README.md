@@ -5,11 +5,11 @@ A deep learning-based object tracking and object avoidance system for the NVIDIA
 
 ## System Overview
 
-<img src="https://github.com/user-attachments/assets/3820039b-e88f-40c0-ac3a-940f596c9360" width="400"/)
+<img src="https://github.com/user-attachments/assets/3820039b-e88f-40c0-ac3a-940f596c9360" width="400"/>
 Jetbot Platform
 
 
-![image](https://github.com/user-attachments/assets/1bd5f635-1796-4f7e-b98c-72c8f3d8ceb8)
+<img src="https://github.com/user-attachments/assets/1bd5f635-1796-4f7e-b98c-72c8f3d8ceb8" width="400">
 Overall System Logic Flow
 
 ## System Workflow (3 core components)
@@ -17,13 +17,13 @@ Overall System Logic Flow
 ### 1. Target Detection
 
 
-![image](https://github.com/user-attachments/assets/eb0b0ea3-bee0-4c1d-83c7-18d7c85389d1)
+<img src="https://github.com/user-attachments/assets/eb0b0ea3-bee0-4c1d-83c7-18d7c85389d1" width="400">
 SSD Architecture
 
 We utilize transfer learning with SSD MobileNet model pretrained on the COCO Dataset for real-time object detection.
 
 
-![image](https://github.com/user-attachments/assets/5fcf1875-946a-4059-96cd-2e4178309595)
+<img src="https://github.com/user-attachments/assets/5fcf1875-946a-4059-96cd-2e4178309595" width="400">
 Detection Output
 
 Only the output of oject detection algorithm is used for target following and object avoiding

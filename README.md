@@ -28,9 +28,9 @@ Detection Output
 Only the output of oject detection algorithm is used for target following and object avoiding
 
 Usage
-  Class : Target vs Obstacle
-  Bounding Box : distance, location, occlusion
-  Confidence : oclusion
+  - Class : Target vs Obstacle
+  - Bounding Box : distance, location, occlusion
+  - Confidence : oclusion
 
 
 a. Detects the target in the current frame (green bounding box)

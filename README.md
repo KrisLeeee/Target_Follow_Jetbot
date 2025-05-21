@@ -3,7 +3,6 @@
 A deep learning-based object tracking and object avoidance system for the NVIDIA JetBot, using SSD MobileNet as the object detection backbone for target detection.
 
 This work was published in the **IEEE International Conference on Consumer Electronics-Asia (ICCE-Asia), 2022**, with oral presentation.  
-📄 [Read the paper on IEEE Xplore](https://ieeexplore.ieee.org/document/9954653)
 
 > M. C. Lee and M. Lee, "Deep Learning-based Target Following and Obstacle Avoidance Methods in Mobile Robots," *2022 IEEE International Conference on Consumer Electronics-Asia (ICCE-Asia)*, pp. 1–4, doi: [10.1109/ICCE-Asia57006.2022.9954653](https://doi.org/10.1109/ICCE-Asia57006.2022.9954653)
 

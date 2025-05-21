@@ -5,8 +5,9 @@ A deep learning-based object tracking and object avoidance system for the NVIDIA
 
 ## System Overview
 
-![image](https://github.com/user-attachments/assets/3820039b-e88f-40c0-ac3a-940f596c9360)
+<img src="https://github.com/user-attachments/assets/3820039b-e88f-40c0-ac3a-940f596c9360" width="400"/)
 Jetbot Platform
+
 
 ![image](https://github.com/user-attachments/assets/1bd5f635-1796-4f7e-b98c-72c8f3d8ceb8)
 Overall System Logic Flow
